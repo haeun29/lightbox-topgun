@@ -11,24 +11,47 @@ a {
 }
 
 ul { 
-    text-decoration: none;
+    list-style-type: none;
 }
 
-/* body {
+body {
      display: flex; 
-} */
+     height: 100vh;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     flex-wrap: wrap;
+}
+
+h2 { 
+    margin-bottom: 1em;
+    font-size: 2em;
+}
 
 #gallery {
     display: flex;
+    flex-wrap: wrap;
+    background: #ccc;
+    justify-content: center;
 }
 
 #gallery > li { 
     width: 200px;
     height: 120px;
     outline: 2px solid red;
+   
 }
 
 #gallery > li > img { 
     width: 100%;
-    object-fit: fill;
+    height: 120px;
+    object-fit: cover;
 }
+
+/* light box - 기본 ; 안보임 */
+
+#lightBox { 
+    display: none;
+    position: fixed;
+}
+
